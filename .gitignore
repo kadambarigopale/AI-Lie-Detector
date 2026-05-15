@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+venv/
+.pytest_cache/
+
+app.log
+
+uv.lock
+
+# ML Models and Data
+app/ml/bert_model/
+app/ml/model.pkl
+app/ml/vectorizer.pkl
+*.pt
+*.safetensors
+*.bin
+*.pth
+checkpoint-*/

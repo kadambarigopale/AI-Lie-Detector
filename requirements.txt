@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+scikit-learn
+nltk
+pandas
+pydantic
+pytest
+httpx
+torch
+transformers
+accelerate>=1.1.0

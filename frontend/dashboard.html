@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report - AI Lie Detector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glow-blob top-left"></div>
+    <div class="glow-blob bottom-right"></div>
+
+    <main class="container">
+        <header>
+            <div class="logo-container">
+                <div class="pulse-ring"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-fingerprint">
+                    <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+                    <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+                    <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+                    <path d="M2 12a10 10 0 0 1 18-6" />
+                    <path d="M2 16h.01" />
+                    <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+                    <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+                    <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+                    <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+                </svg>
+            </div>
+            <h1>Analysis <span class="accent-gradient">Report</span></h1>
+            <p>Comprehensive breakdown of the linguistic analysis results.</p>
+        </header>
+
+        <section class="analysis-panel glass-card" id="dashboardPanel">
+            <div id="resultBox" class="result-box">
+                <div class="dashboard-grid">
+                    <!-- Verdict & Confidence -->
+                    <div class="dashboard-card main-verdict">
+                        <div class="result-header">
+                            <h3 id="verdictTitle">Calculating...</h3>
+                            <div id="confidenceBar" class="confidence-bar">
+                                <div id="confidenceFill" class="confidence-fill"></div>
+                            </div>
+                        </div>
+                        <div class="result-details">
+                            <span id="confidenceText" class="confidence-text">Waiting for data...</span>
+                        </div>
+                    </div>
+
+                    <!-- Sentiment -->
+                    <div class="dashboard-card sentiment-card">
+                        <h4>Sentiment Tone</h4>
+                        <div id="sentimentBadge" class="sentiment-badge">Neutral</div>
+                    </div>
+
+                    <!-- Text Highlight -->
+                    <div class="dashboard-card highlight-card">
+                        <h4>Analysis Breakdown</h4>
+                        <p class="card-subtitle">Suspicious words are highlighted.</p>
+                        <div id="highlightedText" class="highlighted-text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions" style="margin-top: 2rem;">
+                <a href="index.html" class="btn-secondary">
+                    <span>← Back to Analyzer</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
